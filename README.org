@@ -4,40 +4,40 @@ A major mode for editing HashiCorp Configuration Language (HCL) files used in to
 
 ** Usage
 
-To use `hcl-mode`, save `hcl-mode.el` to a directory in your Emacs `load-path`, then add the following code to your Emacs initialization file (e.g. ~/.emacs.d/init.el):
+To use ~hcl-mode~, save ~hcl-mode.el~ to a directory in your Emacs ~load-path~, then add the following code to your Emacs initialization file (e.g. ~/.emacs.d/init.el):
 
 #+BEGIN_SRC emacs-lisp
 (require 'hcl-mode)
 #+END_SRC
 
-Once `hcl-mode` is loaded, it will automatically activate for files with the `.hcl` and `.tf` extensions.
+Once ~hcl-mode~ is loaded, it will automatically activate for files with the ~.hcl~ and ~.tf~ extensions.
 
 ** Testing
 
-To test `hcl-mode`, run the following command from the project directory:
+To test ~hcl-mode~, run the following command from the project directory:
 
 #+BEGIN_SRC sh
 make test
 #+END_SRC
 
-This will run the tests in `hcl-mode-test.el` using ERT.
+This will run the tests in ~hcl-mode-test.el~ using ERT.
 
 ** Contribution Guidelines
 
-Contributions to `hcl-mode` are welcome! If you find a bug, have a feature request, or want to contribute code, please follow these guidelines:
+Contributions to ~hcl-mode~ are welcome! If you find a bug, have a feature request, or want to contribute code, please follow these guidelines:
 
 1. Open an issue on the [hcl-mode.el](https://github.com/jwalsh1-chwy/hcl-mode.el) describing the problem or feature request.
 2. Fork the repository and make your changes on a feature branch.
-3. Add tests for your changes in `hcl-mode-test.el`.
-4. Run `make lint` to ensure that your changes adhere to the coding style.
-5. Run `make test` to ensure that all tests pass.
-6. Submit a pull request to the `develop` branch with your changes.
+3. Add tests for your changes in ~hcl-mode-test.el~.
+4. Run ~make lint~ to ensure that your changes adhere to the coding style.
+5. Run ~make test~ to ensure that all tests pass.
+6. Submit a pull request to the ~develop~ branch with your changes.
 
 ** Project Structure
 
-The `hcl-mode` project has the following structure:
+The ~hcl-mode~ project has the following structure:
 
-- `Makefile`: A Makefile for building, testing, and installing `hcl-mode`.
-- `README.org`: This file.
-- `hcl-mode-test.el`: A test suite for `hcl-mode`.
-- `hcl-mode.el`: The main source file for `hcl-mode`.
+- ~Makefile~: A Makefile for building, testing, and installing ~hcl-mode~.
+- ~README.org~: This file.
+- ~hcl-mode-test.el~: A test suite for ~hcl-mode~.
+- ~hcl-mode.el~: The main source file for ~hcl-mode~.
