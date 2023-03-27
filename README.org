@@ -26,7 +26,7 @@ This will run the tests in ~hcl-mode-test.el~ using ERT.
 
 Contributions to ~hcl-mode~ are welcome! If you find a bug, have a feature request, or want to contribute code, please follow these guidelines:
 
-1. Open an issue on the [hcl-mode.el](https://github.com/jwalsh1-chwy/hcl-mode.el) describing the problem or feature request.
+1. Open an issue describing the problem or feature request.
 2. Fork the repository and make your changes on a feature branch.
 3. Add tests for your changes in ~hcl-mode-test.el~.
 4. Run ~make lint~ to ensure that your changes adhere to the coding style.
