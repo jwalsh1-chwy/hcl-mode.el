@@ -1,4 +1,6 @@
 EMACS = emacs
+DESTDIR = ~/.emacs.d/
+EMACS_LISP_DIR = lisp/
 
 all: build
 
@@ -14,10 +16,11 @@ test:
 	@echo "Running tests for hcl-mode.el..."
 	@$(EMACS) -batch -L . -f ert-run-tests-batch hcl-mode-test.el
 
-install:
+install: build
 	@echo "Installing hcl-mode.el..."
-	@cp hcl-mode.el ~/.emacs.d/lisp/
-	@chmod 644 ~/.emacs.d/lisp/hcl-mode.el
+	@mkdir -p $(DESTDIR)$(EMACS_LISP_DIR)
+	@cp hcl-mode.el $(DESTDIR)$(EMACS_LISP_DIR)
+	@chmod 644 $(DESTDIR)$(EMACS_LISP_DIR)hcl-mode.el
 
 clean:
 	@echo "Cleaning up..."
